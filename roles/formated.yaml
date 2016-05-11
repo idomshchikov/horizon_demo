@@ -11,4 +11,5 @@ apache::service_ensure: running
 
 ntp::bla: bla
 ntp::package_ensure: present
+
 ntp::servers: '-'
