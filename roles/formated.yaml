@@ -10,5 +10,6 @@ apache::second: 2
 apache::service_ensure: running
 
 ntp::bla: bla
+ntp::new: new
 ntp::package_ensure: present
 ntp::servers: '-'
