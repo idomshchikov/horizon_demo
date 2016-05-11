@@ -1,0 +1,22 @@
+service_ensure:
+    type: list
+    options:
+        label: service
+        choices: [running, stopped]
+        help_text: "Apache service status"
+        initial: stopped
+package_ensure:
+    type: list
+    options:
+        label: package
+        choices: [present, absent, 1.2, 1.3]
+        help_text: "Apache package status"
+        initial: absent
+port:
+    type: number
+    options:
+        label: port
+        min_value: 1
+        max_value: 65000
+        help_text: Apache listen port number
+        initial: 80
