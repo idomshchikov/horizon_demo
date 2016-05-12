@@ -1,0 +1,13 @@
+servers:
+    type: string
+    options:
+        label: servers
+        help_text: "Comma separated list of NTP servers to get time"
+        initial: "+*"
+package_ensure:
+    type: list
+    options:
+        label: package_ensure
+        choices: [present, absent]
+        help_text: "NTP package status"
+        initial: present
