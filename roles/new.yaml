@@ -1,9 +1,9 @@
 ---
 apache::first: 1
 apache::package_ensure: present
-apache::port: 555
+apache::port: 80
 apache::second: 2
-apache::service_ensure: running
+apache::service_ensure: stopped
 classes:
 - apache
 - ntp
