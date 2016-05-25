@@ -3,7 +3,7 @@ apache::first: 1
 apache::package_ensure: present
 apache::port: 8080
 apache::second: 2
-apache::service_ensure: stopped
+apache::service_ensure: running
 classes:
 - apache
 - ntp
