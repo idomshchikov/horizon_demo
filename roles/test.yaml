@@ -7,6 +7,8 @@ apache::service_ensure: stopped
 classes:
 - apache
 - ntp
+- mysql
+mysql::service_enabled: true
 ntp::bla: bla
 ntp::package_ensure: present
 ntp::servers: '-'
