@@ -8,7 +8,7 @@ classes:
 - apache
 - ntp
 - mysql
-mysql::service_enabled: true
+mysql::service_enabled: false
 ntp::bla: bla
 ntp::package_ensure: present
 ntp::servers: '-'
