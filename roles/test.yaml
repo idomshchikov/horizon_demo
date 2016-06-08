@@ -1,14 +1,12 @@
 ---
 apache::first: 1
 apache::package_ensure: present
-apache::port: 8080
+apache::port: 80
 apache::second: 2
 apache::service_ensure: stopped
 classes:
 - apache
 - ntp
-- mysql
-mysql::service_enabled: false
 ntp::bla: bla
 ntp::package_ensure: present
 ntp::servers: '-'
